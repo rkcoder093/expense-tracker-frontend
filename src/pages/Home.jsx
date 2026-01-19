@@ -39,7 +39,7 @@ const Home = () => {
 
   // -- API Config --
   const api = axios.create({
-    baseURL: 'https://devassist360.xyz//api/',
+    baseURL: 'https://devassist360.xyz/api/',
     headers: { Authorization: `Bearer ${token}` }
   });
 
