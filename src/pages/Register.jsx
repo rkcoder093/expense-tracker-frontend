@@ -15,7 +15,7 @@ const Register = () => {
     e.preventDefault();
     try {
       // Endpoint from README 
-      await axios.post('http://127.0.0.1:8000/api/auth/register/', formData);
+      await axios.post('https://devassist360.xyz//api/auth/register/', formData);
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.username?.[0] || 'Registration failed');

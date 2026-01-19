@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
     try {
       // API call to blacklist token (as per README) 
       if (token && refreshToken) {
-          await axios.post('http://127.0.0.1:8000/api/auth/logout/', 
+          await axios.post('https://devassist360.xyz//api/auth/logout/', 
             { refresh: refreshToken },
             { headers: { Authorization: `Bearer ${token}` } }
           );

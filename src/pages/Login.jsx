@@ -16,7 +16,7 @@ const Login = () => {
     
     try {
       // Endpoint from README 
-      const response = await axios.post('http://127.0.0.1:8000/api/auth/login/', { 
+      const response = await axios.post('https://devassist360.xyz//api/auth/login/', { 
         username, 
         password 
       });
